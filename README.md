@@ -1,37 +1,35 @@
-# Fastify Node API Structure
+# Fastify & Typescript App
 
-Showcasing Fastify in a modern Node.js project.
+> Fastify & TypeScript starter repository.
 
-### Run the app
+## Installation
 
-- `docker compose up -d`
+```bash
+$ git clone https://github.com/Matschik/fastify-typescript-starter.git
+$ cd fastify-typescript-starter
+$ yarn install
+```
 
-## Technologies
+## Usage
 
-### Environment
+### Development
+```bash
+# Required: typescript watch compilation
+$ yarn watch
 
-- `Node.js`
-- `Typescript`
-- `SWC`
-- `pnpm`
+# Required: development server with hot reload (nodemon)
+$ yarn dev
 
-### Libraries
+# Format with prettier
+$ yarn format
+```
 
-- `Fastify`
-- `Pino`
-- `Typebox`
-- `Kysely`
-- `Paseto`
-- `BullMQ`
-- `Vitest`
-- `ESLint`
+### Production
 
-### Services
+```bash
+# build for production
+$ yarn build
 
-- `Postgres`
-- `Mongodb`
-- `Redis`
-
-### Putting it all together
-
-- `Docker`
+# start production app
+$ yarn start
+```

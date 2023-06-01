@@ -1,20 +1,23 @@
 {
+  "extends": "fastify-tsconfig",
   "compilerOptions": {
-    "target": "ES2022",
-    "module": "CommonJS",
-    "lib": ["ES2022"],
-    "strict": true,
-
-    "esModuleInterop": true, // required by vitest
-    "resolveJsonModule": true,
-
-    "inlineSourceMap": true,
-    "noEmit": true,
-
-    "baseUrl": ".",
-    "paths": {
-      "src/*": ["./src/*"],
-      "test/*": ["./test/*"]
-    }
-  }
+    "sourceMap": true,
+    "outDir": "./dist",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "./src/**/*.ts"
+  ]
 }
