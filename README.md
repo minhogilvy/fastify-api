@@ -1,12 +1,10 @@
-# Fastify & Typescript App
+# Fastify Node API
 
 > Fastify & TypeScript starter repository.
 
 ## Installation
 
 ```bash
-$ git clone https://github.com/Matschik/fastify-typescript-starter.git
-$ cd fastify-typescript-starter
 $ yarn install
 ```
 
